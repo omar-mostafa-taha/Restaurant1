@@ -1,0 +1,130 @@
+body{
+   
+   background-image: url('images/slider-01.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   
+}
+/* Navigation Bar */
+
+.nav{
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   padding:0;
+   margin:0;
+   width: 100%;
+
+   height: 80px;
+   background-color: white; /*change to white*/
+   overflow: hidden;
+   /* position: ; */
+   top: 0;
+   left: 0;
+
+}
+*{
+   margin-top: 0;
+   margin-left:0;
+   margin-right: 0;
+   box-sizing: border-box;
+}
+
+/* .nav li:last-child{
+   border-right: none;
+} */
+.nav li a{
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   color: black;
+   padding:  10px 15px;
+   margin-top: 15px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   font-size: 20px;
+}
+li a:hover{
+   background-color: #d0a772;
+   color: white;
+}
+li a:hover:not(.active){
+   background-color: #d0a772;
+}
+.nav .active{
+   background-color: #d0a772;
+   color: white;
+}
+.clear{
+   clear: both;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* Reservatioin Form  */
+
+
+* {
+	box-sizing: border-box;
+}
+
+#myDiv {
+	background-color:white;
+    color: #eee;
+	width: 500px;
+	margin: 30px auto;
+	padding: 20px 20px;
+	border-radius: 5px;
+    /* opacity: 0.8; */
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+	margin: 10px 0;
+	padding: 15px 55px;
+    border: 1px solid #d0a772;
+    border-radius: 5px;
+}
+input[type=submit], input[type=reset] {
+   
+	background-color:#d0a772;
+	color: white;
+    width: 100%;
+    padding: 10px ;
+    border: 1px solid #d0a772;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 150%;
+    font-size: 20px;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+   
+    background-color:#c48e48;
+    
+}
+label{
+   color: rgb(73, 73, 73);
+}
+h1{
+   color: #d0a772;
+}
+
+
+@media(max-width:600px){
+   #myDiv{
+       width: 100%;
+   }
+   .nav li a{
+      padding: 5px;
+      
+   }
+}
+
+
+
+

@@ -1,0 +1,273 @@
+body{
+   
+   background-image: url('images/qt-bg.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   
+}
+/* Navigation Bar */
+
+.nav{
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   padding:0;
+   margin:0;
+   width: 100%;
+
+   height: 80px;
+   background-color: white; /*change to white*/
+   overflow: hidden;
+   /* position: ; */
+   top: 0;
+   left: 0;
+
+}
+*{
+   margin-top: 0;
+   margin-left:0;
+   margin-right: 0;
+   box-sizing: border-box;
+}
+
+/* .nav li:last-child{
+   border-right: none;
+} */
+.nav li a{
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   color: black;
+   padding:  10px 15px;
+   margin-top: 15px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   font-size: 20px;
+}
+li a:hover{
+   background-color: #d0a772;
+   color: white;
+}
+li a:hover:not(.active){
+   background-color: #d0a772;
+}
+.nav .active{
+   background-color: #d0a772;
+   color: white;
+}
+.clear{
+   clear: both;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* restaurant owner and about us  */
+.parent{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   margin-top: 100px;
+   text-align: center;
+   padding: 30px;
+
+   
+}
+.ch1 img{
+  width: 400px;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-radius:10px ;
+  -webkit-border-radius:10px ;
+  -moz-border-radius:10px ;
+  -ms-border-radius:10px ;
+  -o-border-radius:10px ;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.ch1 img:hover{
+   transform: scale(1.05);
+   box-shadow: 0 8px 15px #d0a772;
+}
+
+.ch1 h1{
+   margin-left: 100px;
+   color: rgb(58, 58, 58);
+   margin-top: 25px;
+}
+.ch2{
+   text-align: center;
+   margin-left: 150px;
+   font-size: 20px;
+   color: rgb(78, 78, 78);
+
+}
+strong{
+   color: #d0a772;
+   display: block;
+   font-size: 50px;
+   margin-top: 20px;
+   
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* stuff */
+
+.container{
+   background-color: white;
+   padding: 30px;
+}
+.chef{
+   display: inline-block;
+   margin: 10px ;
+   margin-left: 50px;
+}
+.chef div{
+   font-size: 40px;
+   text-align: center;
+   margin-top: 15px;
+   border: 1px solid #d0a772;
+   color: rgb(63, 62, 62);
+   
+}
+.chef img{
+   transition: 0.2s ease-in-out;
+   box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+   border: 10px solid #d0a772;
+}
+.chef img:hover{
+   transform: scale(1.05);
+   box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+
+}
+.ostuff{
+   text-align: center;
+   font-size: 70px;
+   color: #d0a772;
+   border: 2px solid #d0a772;
+   width: 40%;
+   margin: 30px auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* gallary */
+
+.gfood{
+   margin-top: 50px;
+   background-color: white;
+   padding: 40px;
+}
+.gfood img{
+   width: 30%;
+   height: 300px;
+   margin-left: 3.14%;
+   margin-bottom: 3%;
+   transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    padding: 10px;
+    /* background-color: rgb(224, 223, 223); */
+   
+}
+.gfood img:hover{
+   transform: scale(1.05);
+   box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+
+}
+
+
+
+@media (max-width:600px){
+   .nav li a{
+      padding: 5px;
+      
+   }
+
+   /* restaurant owner and about us  */
+.parent{
+   width: 100%;
+   display: block;
+   
+   text-align: center;
+
+   
+}
+.ch1 img{
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+ 
+}
+
+
+.ch1 h1{
+   margin-left: auto;
+   margin-top: 25px;
+}
+.ch2{
+   text-align: center;
+   margin-left: auto;
+   
+
+}
+strong{
+   display: block;
+  
+   
+}
+/* stuff */
+
+.container{
+   padding: 30px;
+}
+
+.chef div{
+   font-size: 20px;
+   text-align: center;
+   margin-top: 15px;
+   width: 50%;
+   
+   
+   
+}
+.chef img{
+   width: 75%;
+
+   
+}
+
+.ostuff{
+   text-align: center;
+   font-size: 50px;
+   width: 50%;
+   margin: 30px auto;
+}
+/* gallary */
+
+
+.gfood img{
+   width: 100%;
+  
+   
+   
+}
+
+
+
+
+
+
+   
+}
+ 
+
+

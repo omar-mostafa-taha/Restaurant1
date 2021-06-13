@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="two.css">
+
+
+    <title>Reservation</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <ul class="nav">
+        <li style="margin-left: 15px;"><a href="index.html">Home</a>
+        </li>
+        <li><a href="one.html">Menu</a></li>
+        <li><a class="active" href="two.html">Book</a>
+        </li>
+        <li><a href="three.html">About</a>
+        </li>
+        <li><a href="four.html">Contact</a>
+        </li>
+    </ul>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Reservation form -->
+    <footer>
+        <div class="container" id="myDiv">
+            <caption>
+                <h1 align="center">Book Table</h1>
+            </caption>
+            <table>
+                <form id="myform" onsubmit="return validation(event)" autocomplete="on">
+                    <div class="inputBox">
+                        <tr>
+                            <td>
+                                <label>First Name:</label>
+                            </td><br>
+                            <td>
+                                <input name="fname" type="text" placeholder="First name" id="user" class="control"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Last Name:</label>
+                            </td>
+                            <td>
+                                <input name="lname" type="text" placeholder="last name" id="user2" class="control"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Email:</label>
+                            </td>
+                            <td>
+                                <input name="email" type="text" id="email" class="control" placeholder="email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Mobile:</label>
+                            </td>
+                            <td>
+                                <input name="number" type="text" id="mobile" class="control"
+                                    placeholder="mobile phone number" pattern="[0-9]{11}" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Address:</label>
+                            </td>
+                            <td>
+                                <input name="adress" type="text" id="adress" class="adress" placeholder="adress"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Password:</label>
+                            </td>
+                            <td>
+                                <input name="password" type="password" id="pass" class="control" placeholder="password"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Confirm Password:</label>
+                            </td>
+                            <td>
+                                <input name="passward" type="password" placeholder="confirm passward" id="conpass"
+                                    class="control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Gender:</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="gender">
+                                <label>Male</label>
+                                <input type="radio" name="gender">
+                                <label>Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="submit" class="btn" id="submit">
+                            </td>
+                        </tr>
+                    </div>
+                </form>
+            </table>
+        </div>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
